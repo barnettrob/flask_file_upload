@@ -1,7 +1,12 @@
-Flask Example
+Flask File Upload and List
 =============
 
-This example provides a very basic `flask` web server.
+This shows how to upload and list files in Python.
+
+You'll need to also create folder called uploads in the project root.
+
+This project uses a very basic `flask` web server using Lando
+based on https://github.com/lando/lando/tree/master/examples/flask
 
 See the `.lando.yml` in this directory for Python configuration options.
 
