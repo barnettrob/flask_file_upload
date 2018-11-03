@@ -3,7 +3,7 @@ Flask File Upload and List
 
 This shows how to upload and list files in Python.
 
-You'll need to also create folder called uploads in the project root.
+You'll need to also create folder called `uploads` in the project root.
 
 This project uses a very basic `flask` web server using Lando
 based on https://github.com/lando/lando/tree/master/examples/flask
