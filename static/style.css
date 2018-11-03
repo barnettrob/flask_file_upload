@@ -1,0 +1,5 @@
+ul.menu li {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 10px 0 0;
+}
