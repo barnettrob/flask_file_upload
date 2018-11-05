@@ -1,5 +1,5 @@
 import os
-from flask import Flask, flash, request, render_template, redirect, url_for
+from flask import Flask, flash, request, render_template, redirect, url_for, send_from_directory
 from livereload import Server, shell
 from werkzeug.utils import secure_filename
 
@@ -55,8 +55,7 @@ def documents():
 
 @app.route('/' + UPLOAD_FOLDER + '/<file>')
 def file_show(file = None):
-    host = 'https://' + request.host + '/'
-    return render_template('pdf-page.html', pdf=os.path.join(host + app.config['UPLOAD_FOLDER']) + '/' + file)
+    return send_from_directory(UPLOAD_FOLDER, file)
 
 # Live reload server
 # Prob want to set some sort of env flag to only do this on DEV
